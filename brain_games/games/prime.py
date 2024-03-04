@@ -1,7 +1,7 @@
 import random
 import prompt
 
-# Function that generates random number.
+# Function that is checking for prime number.
 
 
 def is_prime(n):
@@ -19,7 +19,7 @@ def play():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    
+
     # Counter of the right answers. Now it's on 0 mark.
     correct_answers_count = 0
     print('Answer "yes" if the number is prime, otherwise answer "no"')
