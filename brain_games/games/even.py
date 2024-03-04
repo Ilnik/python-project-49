@@ -18,7 +18,7 @@ def play():
 
     # Counter of the right answers. Now it's on 0 mark.
     correct_answers_count = 0
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     # Cyrcle of questionin user. 3 right answers = victory, if not - try again.
     while correct_answers_count < 3:
