@@ -46,7 +46,7 @@ def play():
         else:
             print(f"{user_answer} is wrong answer ;(. "
                   f"Correct answer was {hidden_element}.")
-            print(f"Let's try again, {name} !")
+            print(f"Let's try again, {name}!")
             correct_answers_count = 0
             exit()
 
