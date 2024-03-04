@@ -9,7 +9,7 @@ def generate_expression():
     num1 = random.randint(1, 20)
     num2 = random.randint(1, 20)
     operator = random.choice(['+', '-', '*'])
-    expression = f"{num1}{operator}{num2}"
+    expression = f"{num1} {operator} {num2}"
     return expression
 
 
