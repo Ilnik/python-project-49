@@ -7,7 +7,7 @@ import prompt
 def generate_progression():
     start = random.randint(1, 20)
     step = random.randint(1, 5)
-    length = random.randint(10, 10)
+    length = random.randint(8, 10)
     return [start + i * step for i in range(length)]
 
 
