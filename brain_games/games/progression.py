@@ -48,5 +48,6 @@ def play():
                   f"Correct answer was {hidden_element}.")
             print(f"Let's try again, {name} !")
             correct_answers_count = 0
+            exit()
 
     print(f"Congratulations, {name}!")

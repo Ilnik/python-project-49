@@ -37,5 +37,6 @@ def play():
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")
             print(f"Let's try again, {name} !")
             correct_answers_count = 0
+            exit()
 
     print(f"Congratulations, {name}!")

@@ -13,7 +13,7 @@ def generate_expression():
     return expression
 
 
-# Function that evaluate random expression as integer. 
+# Function that evaluate random expression as integer.
 # Now we can use it further.
 
 
@@ -57,6 +57,6 @@ def play():
                   f"Correct answer was {correct_answer}.")
             print(f"Let's try again, {name} !")
             correct_answers_count = 0
+            exit()
 
     print(f"Congratulations, {name}!")
-
