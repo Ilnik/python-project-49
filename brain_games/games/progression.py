@@ -34,7 +34,7 @@ def play():
     # Cycle of questioning user. 3 right answers = victory, if not - try again.
     while correct_answers_count < 3:
         progression, hidden_element = hidden_ran_elem(generate_progression())
-        print("Question: ", ' '.join(map(str, progression)))
+        print("Question:", ' '.join(map(str, progression)))
 
         # Integer input of user answer for right comparison in the next
         # iterations.
