@@ -1,8 +1,8 @@
-from brain_games.games.even import play
+from brain_games.games.even import is_even
 
 
 def main():
-    play()
+    is_even()
 
 
 if __name__ == "__main__":

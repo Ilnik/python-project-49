@@ -1,8 +1,8 @@
-from brain_games.games.gcd import play
+from brain_games.games.gcd import is_gcd
 
 
 def main():
-    play()
+    is_gcd()
 
 
 if __name__ == "__main__":
