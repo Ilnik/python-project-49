@@ -1,15 +1,18 @@
-import random
+from new_random import get_random_number_from_range
+from main import process_game
+from typing import Tuple
+
+START_WELCOME_TEXT = 'Answer "yes" if the number is even, otherwise answer "no"'
 
 
-def even(number):
-    return number % 2 == 0
+def generate_even_question() -> Tuple[str, str]:
+    number = get_random_number_from_range()
+    answer = "yes" if number % 2 == 0 else "no"
+    return str(number), answer
 
 
-def is_even():
-    message = 'Answer "yes" if the number is even, otherwise answer "no".'
-    random_number = random.randint(1, 100)
-    question = f"Question: {random_number}"
-    user_answer = input("Your answer: ").lower()
-    answer = even(random_number) == (user_answer == "yes") \
-        or not even(random_number) == (user_answer == "no")
-    return question, answer, message
+def play():
+    process_game(question_generator=generate_even_question, start_game_text=START_WELCOME_TEXT)
+
+
+play()

@@ -1,23 +1,20 @@
+from new_random import get_random_number_from_range
+from main import process_game
+from typing import Tuple
+from random import random
 import random
 
-
-def generate_expression():
-    num1 = random.randint(1, 20)
-    num2 = random.randint(1, 20)
-    operator = random.choice(["+", "-", "*"])
-    expression = f"{num1} {operator} {num2}"
-    return expression
+START_WELCOME_TEXT = 'What is the result of the expression?'
 
 
-def evaluate_expression(expression):
-    return eval(expression)
+def is_calc() -> Tuple[str, str]:
+    question = f"{get_random_number_from_range()} {random.choice(["+", "-", "*"])} {get_random_number_from_range()}"
+    answer = str(eval(question))
+    return question, answer
 
 
-def is_calc():
-    message = "What is the result of the expression?"
-    question = f"Question: {generate_expression()}"
-    user_answer = input("Your answer: ").lower()
-    answer = evaluate_expression(
-        generate_expression()
-    ) and user_answer == evaluate_expression(generate_expression())
-    return question, answer, message
+def play():
+    process_game(question_generator=is_calc, start_game_text=START_WELCOME_TEXT)
+
+
+play()
