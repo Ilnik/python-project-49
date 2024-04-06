@@ -1,14 +1,17 @@
+from typing import Tuple
+import random
 from new_random import get_random_number_from_range
 from main import process_game
-from typing import Tuple
-from random import random
-import random
 
-START_WELCOME_TEXT = 'What is the result of the expression?'
+START_WELCOME_TEXT = "What is the result of the expression?"
 
 
 def is_calc() -> Tuple[str, str]:
-    question = f"{get_random_number_from_range()} {random.choice(["+", "-", "*"])} {get_random_number_from_range()}"
+    question = (
+        f"{get_random_number_from_range()} "
+        f"{random.choice(['+', '-', '*'])} "
+        f"{get_random_number_from_range()}"
+    )
     answer = str(eval(question))
     return question, answer
 

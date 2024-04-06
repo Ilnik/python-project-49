@@ -1,8 +1,10 @@
+from typing import Tuple
 from new_random import get_random_number_from_range
 from main import process_game
-from typing import Tuple
 
-START_WELCOME_TEXT = 'Answer "yes" if the number is prime. Otherwise answer "no".'
+
+START_WELCOME_TEXT = ('Answer "yes" if the number is prime. '
+                      'Otherwise answer "no".')
 
 
 def is_prime() -> Tuple[str, str]:
@@ -20,7 +22,8 @@ def is_prime() -> Tuple[str, str]:
 
 
 def play():
-    process_game(question_generator=is_prime, start_game_text=START_WELCOME_TEXT)
+    process_game(question_generator=is_prime,
+                 start_game_text=START_WELCOME_TEXT)
 
 
 play()
