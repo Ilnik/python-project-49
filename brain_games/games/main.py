@@ -24,7 +24,7 @@ def process_game(
         result = prompt.string(f"Question: {question}\nYour answer: ").lower()
         if result != answer:
             print(f"This answer is incorrect!\nLet's try again, {name}")
-            return
+            break
 
         print("Correct!")
 
