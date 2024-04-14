@@ -20,5 +20,7 @@ def random_progression_generation() -> Tuple[str, str]:
 
 
 def play():
-    process_game(question_generator=random_progression_generation,
-                 start_game_text=START_WELCOME_TEXT)
+    process_game(
+        question_generator=random_progression_generation,
+        start_game_text=START_WELCOME_TEXT,
+    )

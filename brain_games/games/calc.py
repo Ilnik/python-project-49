@@ -11,11 +11,11 @@ def calculator() -> Tuple[str, str]:
         num1, operator, num2 = expression.split()
         num1 = int(num1)
         num2 = int(num2)
-        if operator == '+':
+        if operator == "+":
             return num1 + num2
-        elif operator == '-':
+        elif operator == "-":
             return num1 - num2
-        elif operator == '*':
+        elif operator == "*":
             return num1 * num2
 
     question = (
@@ -28,4 +28,5 @@ def calculator() -> Tuple[str, str]:
 
 
 def play():
-    process_game(question_generator=calculator, start_game_text=START_WELCOME_TEXT)
+    process_game(question_generator=calculator,
+                 start_game_text=START_WELCOME_TEXT)
