@@ -6,7 +6,7 @@ from typing import Tuple
 START_WELCOME_TEXT = 'Find the greatest common divisor of given numbers.'
 
 
-def is_gcd() -> Tuple[str, str]:
+def greatest_common_divisor_calculation() -> Tuple[str, str]:
     def gcd(a, b):
         while b:
             a, b = b, a % b
@@ -19,7 +19,4 @@ def is_gcd() -> Tuple[str, str]:
 
 
 def play():
-    process_game(question_generator=is_gcd, start_game_text=START_WELCOME_TEXT)
-
-
-play()
+    process_game(question_generator=greatest_common_divisor_calculation, start_game_text=START_WELCOME_TEXT)

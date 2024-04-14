@@ -16,6 +16,3 @@ def play():
         question_generator=generate_even_question,
         start_game_text=START_WELCOME_TEXT
     )
-
-
-play()

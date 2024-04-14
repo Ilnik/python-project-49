@@ -27,3 +27,8 @@ J
 brain_games/games/prime.py,d/7/d7fc435c071b016f346171ff85efc11556b744f4
 P
  brain_games/games/progression.py,c/d/cd51b4ec7462bd5bedc1a077a4d0695d1732ff69
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+R
+".github/workflows/hexlet-check.yml,8/3/8369295cf04737c94c8b5823ca5548a81771bc43

@@ -7,7 +7,7 @@ START_WELCOME_TEXT = ('Answer "yes" if the number is prime. '
                       'Otherwise answer "no".')
 
 
-def is_prime() -> Tuple[str, str]:
+def prime_number_calculation() -> Tuple[str, str]:
     def prime(n):
         if n < 2:
             return False
@@ -22,8 +22,5 @@ def is_prime() -> Tuple[str, str]:
 
 
 def play():
-    process_game(question_generator=is_prime,
+    process_game(question_generator=prime_number_calculation,
                  start_game_text=START_WELCOME_TEXT)
-
-
-play()
