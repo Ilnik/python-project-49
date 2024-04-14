@@ -1,6 +1,7 @@
+from typing import Tuple
 from new_random import get_random_number_from_range
 from main import process_game
-from typing import Tuple
+
 
 START_WELCOME_TEXT = 'Answer "yes" if the number is even, otherwise answer "no"'
 
